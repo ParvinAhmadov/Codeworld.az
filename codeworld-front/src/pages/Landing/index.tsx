@@ -1,5 +1,7 @@
+import HeroSection from "../../components/HeroSection";
+
 const LandingPage = () => {
-  return <div className="text-black">LandingPage</div>;
+  return <div ><HeroSection/></div>;
 };
 
 export default LandingPage;
