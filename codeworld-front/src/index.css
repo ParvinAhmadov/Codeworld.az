@@ -18,3 +18,18 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
+
+@keyframes wave {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+}
+
+
+
+
+
+
+@keyframes wave {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+}
