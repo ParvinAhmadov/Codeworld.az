@@ -49,7 +49,7 @@ const TeachersSection: React.FC = () => {
   return (
     <section className="max-w-[1440px] mx-auto  px-6 py-12 flex flex-col gap-10 overflow-hidden nav-poppins">
       <div className="flex items-center justify-start mb-8 gap-2">
-        <h2 className="text-[clamp(1.5rem,4vw,2.5rem)]  font-bold text-start text-[#023047] nav-poppins">
+        <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-[#023047]">
           Müəllimlərimiz
         </h2>
         <img
@@ -71,9 +71,9 @@ const TeachersSection: React.FC = () => {
             className="
        shrink-0
 
-         w-full           /* Mobile: full width */
-         sm:max-w-[280px] /* Tablet: max width */
-         lg:w-[330px]     /* Desktop: normal width */
+         w-full           
+         sm:max-w-[280px]
+         lg:w-[330px]     
          h-[435px]
          flex flex-col items-center
        "

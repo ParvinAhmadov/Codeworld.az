@@ -56,10 +56,10 @@ const CoursesSection: React.FC = () => {
   ];
 
   return (
-    <section className="max-w-[1440px] mx-auto px-6 py-10">
+    <section className="max-w-[1440px] mx-auto px-6 py-10 nav-poppins">
       <div className="flex items-center justify-start mb-8 gap-2">
-        <h2 className="text-[clamp(1.5rem,4vw,2.5rem)]  font-bold text-start text-[#023047] nav-poppins">
-          Kurslarımız
+      <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-[#023047]">
+      Kurslarımız
         </h2>
         <img
           src="/images/Compright.png"
@@ -68,7 +68,7 @@ const CoursesSection: React.FC = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-start nav-poppins">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-start ">
         {courses.map((course, index) => (
           <div
             key={course.title}
@@ -87,7 +87,7 @@ const CoursesSection: React.FC = () => {
             </h3>
 
             <div className="group relative w-full h-full overflow-hidden rounded-md lg:p-3">
-              <div className="absolute bottom-0 left-0 z-10 h-[20px] w-full hidden lg:flex">
+              <div className="absolute bottom-0 left-0 z-10 h-5 w-full hidden lg:flex">
                 <img
                   src="/images/Line.png"
                   alt="Wave line overlay"

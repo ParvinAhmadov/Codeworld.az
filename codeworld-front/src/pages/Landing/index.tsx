@@ -1,5 +1,6 @@
 import CourseCard from "../../components/CourseCard";
 import HeroSection from "../../components/HeroSection";
+import ScholarshipsSection from "../../components/ScholarshipsSection";
 import TeachersSection from "../../components/TeachersSection";
 
 const LandingPage = () => {
@@ -7,7 +8,8 @@ const LandingPage = () => {
     <div>
       <HeroSection />
       <CourseCard />
-      <TeachersSection/>
+      <TeachersSection />
+      <ScholarshipsSection/>
     </div>
   );
 };
