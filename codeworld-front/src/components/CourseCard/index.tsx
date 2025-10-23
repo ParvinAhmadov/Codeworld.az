@@ -108,7 +108,7 @@ const CoursesSection: React.FC = () => {
                 <img
                   src="/images/Compright.png"
                   alt=""
-                  className="w-[22px] h-[18px] sm:w-[24px] sm:h-[20px]"
+                  className="w-[22px] h-[18px] sm:w-6 sm:h-5"
                 />
               </div>
             </div>
