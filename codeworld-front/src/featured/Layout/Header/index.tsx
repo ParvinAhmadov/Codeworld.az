@@ -25,11 +25,7 @@ const Header: React.FC = () => {
     <header className="bg-[#A2580533] w-full">
       <div className="max-w-[1440px] h-[86px] mx-auto flex justify-between items-center px-5 py-3">
         <div className="flex items-center gap-2">
-          <img
-            className="w-[36px] h-[36px]"
-            src="/images/WorldLogo.png"
-            alt="Logo"
-          />
+          <img className="w-9 h-9" src="/images/WorldLogo.png" alt="Logo" />
           <NavLink
             to="/"
             className="font-bold text-[#023047]"

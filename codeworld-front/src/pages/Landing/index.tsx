@@ -11,7 +11,7 @@ const LandingPage = () => {
       <CourseCard />
       <TeachersSection />
       <ScholarshipsSection />
-      <TestimonialsSlider/>
+      <TestimonialsSlider />
     </div>
   );
 };

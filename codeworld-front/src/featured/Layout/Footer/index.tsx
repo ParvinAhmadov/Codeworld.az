@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-[40px] h-[40px] border flex items-center justify-center rounded-full transition-transform duration-300 hover:scale-110"
+                className="w-10 h-10 border flex items-center justify-center rounded-full transition-transform duration-300 hover:scale-110"
                 style={{ color, fontSize: "1.25rem" }}
               >
                 {icon}

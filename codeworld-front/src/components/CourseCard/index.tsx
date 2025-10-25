@@ -58,8 +58,8 @@ const CoursesSection: React.FC = () => {
   return (
     <section className="max-w-[1440px] mx-auto px-6 py-10 nav-poppins">
       <div className="flex items-center justify-start mb-8 gap-2">
-      <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-[#023047]">
-      Kurslarımız
+        <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-[#023047]">
+          Kurslarımız
         </h2>
         <img
           src="/images/Compright.png"

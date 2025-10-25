@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# 🎓 CodeWorld.az — Education Platform (Landing Page)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu layihə **CodeWorld.az** təhsil platformasının **landing page** hissəsi üçün hazırlanmışdır.  
+Layihənin məqsədi — kurslar, müəllimlər, təqaüdlər və tələbə rəylərini təqdim edən **müasir, sürətli və responsiv** veb interfeys yaratmaqdır.  
+Bütün dizayn elementləri **Figma dizaynına uyğun** şəkildə kodlaşdırılmışdır.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 İstifadə Olunan Texnologiyalar
 
-## React Compiler
+| Texnologiya                 | Təsviri                                            |
+| --------------------------- | -------------------------------------------------- |
+| **React + Vite**            | Layihənin əsas frontend framework və build sistemi |
+| **TypeScript**              | Tip təhlükəsizliyi və strukturlaşdırılmış kod üçün |
+| **TailwindCSS**             | Sürətli və modul əsaslı CSS tərtibatı üçün         |
+| **Framer Motion**           | Interaktiv animasiyalar və keçidlər üçün           |
+| **AOS (Animate On Scroll)** | Scroll zamanı animasiya effektləri üçün            |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Əsas Komponentlər
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Komponent                 | Təsviri                                                             |
+| ------------------------- | ------------------------------------------------------------------- |
+| **HeroSection**           | Saytın giriş bölməsi — başlıq, CTA və təqdimat hissəsi              |
+| **CoursesSection**        | “Kurslarımız” bölməsi — kurs adları, ikonları və təsvirləri ilə     |
+| **TeachersSection**       | “Müəllimlərimiz” bölməsi — müəllim şəkilləri və məlumatları         |
+| **ScholarshipsSection**   | “Təqaüdlər” bölməsi — təqaüd imkanları haqqında məlumat             |
+| **TestimonialsWithImage** | “Tələbələrimizin rəyləri” bölməsi — slayd şəklində tələbə fikirləri |
+| **ErrorBoundry**          | UI səhvlərini tutmaq və ehtiyat ekran göstərmək üçün                |
+| **Header & Footer**       | Naviqasiya və alt hissə komponentləri                               |
+| **Layout**                | Bütün səhifələrin quruluşunu birləşdirən əsas layout strukturu      |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🎯 Layihənin Məqsədi
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Təhsil platformasının **landing page dizaynını** Figma əsasında qurmaq
+- **Responsiv (mobil, planşet, desktop)** interfeys təmin etmək
+- **Framer Motion** və **AOS** ilə animasiyalı istifadəçi təcrübəsi yaratmaq
+- **Təmiz və modulyar** komponent strukturu formalaşdırmaq
+
+---
+
+## ⚙️ Layihənin İşə Salınması
+
+Aşağıdakı addımlarla layihəni lokalda işə sala bilərsiniz 👇
+
+### 1️⃣ GitHub repositoriyasını klon edin
+
+```bash
+git clone https://github.com/ParvinAhmadov/Codeworld.az.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Layihə qovluğuna keçin
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd codeworld-front
 ```
+
+### 3️⃣ Lazımi paketləri quraşdırın
+
+```bash
+npm install
+```
+
+### 4️⃣ Layihəni işə salın
+
+```bash
+npm run dev
+```
+
+### 5️⃣ Brauzerdə açın
+
+```
+http://localhost:5173
+```
+
+**Parvin Ahmadov**  
+Software Developer  
+🌐 [GitHub](https://github.com/ParvinAhmadov)
